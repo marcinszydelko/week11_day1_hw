@@ -17,4 +17,19 @@ public class PrinterTest {
         assertEquals(490, printer.getSheets());
     }
 
+    @Test
+    public void hasTonner(){
+        Printer printer = new Printer();
+        assertEquals(1000, printer.getToner());
+    }
+    
+//    @Test
+//    public void removesToner(){
+//        Printer printer = new Printer();
+//        printer.print(2,5);
+//        assertEquals(990, printer.getTonner);
+//    }
+
+
+
 }
