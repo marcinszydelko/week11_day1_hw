@@ -17,4 +17,12 @@ public class CalculatorTest {
         assertEquals(3.00, calculator.subtract(5.00, 2.00), 0.01);
     }
 
+    @Test
+    public void canMultiply(){
+        Calculator calculator = new Calculator();
+        assertEquals(5, calculator.multiply(2.5, 2), 0.01);
+    }
+
+    
+
 }
