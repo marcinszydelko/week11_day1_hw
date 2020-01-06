@@ -5,4 +5,10 @@ public class Printer {
         return this.sheets;
     }
 
+    public void print( int pages, int copies ){
+        if(pages * copies <= this.sheets){
+            this.sheets -= pages * copies;
+        }
+    }
+
 }
