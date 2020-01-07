@@ -12,10 +12,10 @@ public class Printer {
 
     public void print( int pages, int copies ){
          int totalPages = pages * copies;
-        if(totalPages <= this.sheets){
+         if(totalPages <= this.sheets){
             this.sheets -= totalPages;
             this.toner -= totalPages;
-        }
+          }
     }
 
 }

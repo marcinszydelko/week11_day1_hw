@@ -24,10 +24,17 @@ public class PrinterTest {
     }
 
     @Test
-    public void removesToner(){
+    public void doesPrint(){
         Printer printer = new Printer();
         printer.print(2,5);
         assertEquals(990, printer.getToner());
+    }
+
+    @Test
+    public void doesNotPrint(){
+        Printer printer = new Printer();
+        printer.print(100, 12);
+        assertEquals(500, printer.getSheets());
     }
 
 
